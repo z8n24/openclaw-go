@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/user/openclaw-go/internal/channels"
+	"github.com/z8n24/openclaw-go/internal/channels"
 )
 
 func init() {

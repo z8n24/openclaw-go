@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/user/openclaw-go/internal/agents"
-	"github.com/user/openclaw-go/internal/agents/tools"
+	"github.com/z8n24/openclaw-go/internal/agents"
+	"github.com/z8n24/openclaw-go/internal/agents/tools"
 )
 
 // ToolsSessionManager 实现 tools.SessionManager 接口

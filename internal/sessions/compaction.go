@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/user/openclaw-go/internal/agents"
+	"github.com/z8n24/openclaw-go/internal/agents"
 )
 
 // Compactor 会话压缩器

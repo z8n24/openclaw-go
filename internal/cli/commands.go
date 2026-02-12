@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/user/openclaw-go/internal/config"
-	"github.com/user/openclaw-go/internal/gateway"
+	"github.com/z8n24/openclaw-go/internal/config"
+	"github.com/z8n24/openclaw-go/internal/gateway"
 )
 
 // ============================================================================

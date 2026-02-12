@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/user/openclaw-go/internal/agents"
+	"github.com/z8n24/openclaw-go/internal/agents"
 )
 
 const (

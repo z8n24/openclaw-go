@@ -7,8 +7,8 @@ import (
 
 	"github.com/bwmarrin/discordgo"
 	"github.com/rs/zerolog/log"
-	"github.com/user/openclaw-go/internal/channels"
-	"github.com/user/openclaw-go/internal/config"
+	"github.com/z8n24/openclaw-go/internal/channels"
+	"github.com/z8n24/openclaw-go/internal/config"
 )
 
 // Channel 是 Discord 渠道实现

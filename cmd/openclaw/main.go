@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/user/openclaw-go/internal/cli"
+	"github.com/z8n24/openclaw-go/internal/cli"
 )
 
 // 版本信息 (可通过 ldflags 设置)

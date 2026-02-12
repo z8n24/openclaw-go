@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/user/openclaw-go/internal/cron"
+	"github.com/z8n24/openclaw-go/internal/cron"
 )
 
 // CronTool 定时任务工具

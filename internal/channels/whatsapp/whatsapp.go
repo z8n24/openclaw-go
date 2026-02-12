@@ -9,7 +9,7 @@ import (
 
 	"github.com/mdp/qrterminal/v3"
 	"github.com/rs/zerolog/log"
-	"github.com/user/openclaw-go/internal/channels"
+	"github.com/z8n24/openclaw-go/internal/channels"
 	"go.mau.fi/whatsmeow"
 	"go.mau.fi/whatsmeow/proto/waE2E"
 	"go.mau.fi/whatsmeow/store/sqlstore"

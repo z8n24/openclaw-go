@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/user/openclaw-go/internal/cron"
-	"github.com/user/openclaw-go/internal/gateway/protocol"
-	"github.com/user/openclaw-go/internal/skills"
+	"github.com/z8n24/openclaw-go/internal/cron"
+	"github.com/z8n24/openclaw-go/internal/gateway/protocol"
+	"github.com/z8n24/openclaw-go/internal/skills"
 )
 
 // Dependencies 用于注入依赖

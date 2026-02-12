@@ -9,8 +9,8 @@ import (
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"github.com/rs/zerolog/log"
-	"github.com/user/openclaw-go/internal/channels"
-	"github.com/user/openclaw-go/internal/config"
+	"github.com/z8n24/openclaw-go/internal/channels"
+	"github.com/z8n24/openclaw-go/internal/config"
 )
 
 // Channel 是 Telegram 渠道实现

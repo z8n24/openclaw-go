@@ -1,4 +1,4 @@
-module github.com/user/openclaw-go
+module github.com/z8n24/openclaw-go
 
 go 1.24.0
 

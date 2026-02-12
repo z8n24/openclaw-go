@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/rs/zerolog/log"
-	"github.com/user/openclaw-go/internal/channels"
+	"github.com/z8n24/openclaw-go/internal/channels"
 
 	_ "github.com/mattn/go-sqlite3"
 )

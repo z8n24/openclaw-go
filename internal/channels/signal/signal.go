@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/rs/zerolog/log"
-	"github.com/user/openclaw-go/internal/channels"
+	"github.com/z8n24/openclaw-go/internal/channels"
 )
 
 // Config Signal 配置

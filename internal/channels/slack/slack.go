@@ -11,7 +11,7 @@ import (
 	"github.com/slack-go/slack"
 	"github.com/slack-go/slack/slackevents"
 	"github.com/slack-go/slack/socketmode"
-	"github.com/user/openclaw-go/internal/channels"
+	"github.com/z8n24/openclaw-go/internal/channels"
 )
 
 // Config Slack 配置

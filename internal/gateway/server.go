@@ -13,8 +13,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
 	"github.com/rs/zerolog/log"
-	"github.com/user/openclaw-go/internal/config"
-	"github.com/user/openclaw-go/internal/gateway/protocol"
+	"github.com/z8n24/openclaw-go/internal/config"
+	"github.com/z8n24/openclaw-go/internal/gateway/protocol"
 )
 
 const (
