@@ -1,0 +1,46 @@
+# Binaries
+bin/
+dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.html
+
+# Dependency directories
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Config (local)
+*.local.json
+.env
+.env.local
+
+# State
+.openclaw/
+*.db
+*.sqlite
+
+# Logs
+*.log
+logs/
+
+# Build
+build/
