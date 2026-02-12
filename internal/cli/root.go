@@ -246,7 +246,7 @@ var chatCmd = &cobra.Command{
 				fmt.Printf("\nError: %v\n", err)
 			}
 			
-			fmt.Println("\n")
+			fmt.Println()
 		}
 		
 		return nil
