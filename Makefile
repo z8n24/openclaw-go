@@ -93,6 +93,23 @@ tools:
 	go install mvdan.cc/gofumpt@latest
 	go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 
+# 基准测试
+bench:
+	$(GO) test -bench=. -benchmem ./...
+
+# 快速构建 (无优化，用于开发)
+quick:
+	@mkdir -p $(BIN_DIR)
+	$(GO) build -o $(BIN_DIR)/openclaw $(MAIN)
+	@echo "Quick build: $(BIN_DIR)/openclaw"
+
+# 检查
+check: fmt lint test
+
+# Docker 构建
+docker:
+	docker build -t openclaw-go:$(VERSION) .
+
 # 帮助
 help:
 	@echo "Usage:"
