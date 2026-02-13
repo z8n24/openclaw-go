@@ -95,7 +95,14 @@ func NewPathsFromEnv() *Paths {
 		root = findProjectRoot()
 	}
 	if root == "" {
-		root, _ = os.Getwd()
+		// 默认使用 ~/.openclaw (与 TypeScript 版本保持一致)
+		home, err := os.UserHomeDir()
+		if err == nil {
+			root = filepath.Join(home, ".openclaw")
+		} else {
+			// fallback 到当前目录
+			root, _ = os.Getwd()
+		}
 	}
 	return NewPaths(root)
 }

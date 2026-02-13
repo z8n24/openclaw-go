@@ -291,6 +291,9 @@ func (c *Client) buildRequest(req *agents.ChatRequest, stream bool) *chatRequest
 	
 	if apiReq.MaxTokens == 0 {
 		apiReq.MaxTokens = 8192
+	} else if apiReq.MaxTokens > 8192 {
+		// DeepSeek 最大支持 8192 tokens
+		apiReq.MaxTokens = 8192
 	}
 	
 	if req.Temperature != nil {
