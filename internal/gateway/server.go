@@ -128,6 +128,8 @@ func (s *Server) Start() error {
 	{
 		api.GET("/status", s.handleStatus)
 		api.GET("/health", s.handleHealth)
+		api.GET("/models", s.handleModels)
+		api.POST("/chat", s.handleChat)
 	}
 	
 	s.httpServer = &http.Server{
