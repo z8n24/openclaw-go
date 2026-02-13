@@ -110,8 +110,15 @@ func (s *Server) Start() error {
 	router := gin.New()
 	router.Use(gin.Recovery())
 	
-	// 首页
-	router.GET("/", s.handleIndex)
+	// 首页 - 优先使用 web/index.html
+	if _, err := os.Stat("./web/index.html"); err == nil {
+		router.GET("/", func(c *gin.Context) {
+			c.File("./web/index.html")
+		})
+		router.StaticFS("/ui", http.Dir("./web"))
+	} else {
+		router.GET("/", s.handleIndex)
+	}
 	
 	// WebSocket endpoint
 	router.GET("/ws", s.handleWebSocket)
@@ -121,11 +128,6 @@ func (s *Server) Start() error {
 	{
 		api.GET("/status", s.handleStatus)
 		api.GET("/health", s.handleHealth)
-	}
-	
-	// Control UI 静态文件 (如果目录存在)
-	if _, err := os.Stat("./web"); err == nil {
-		router.StaticFS("/ui", http.Dir("./web"))
 	}
 	
 	s.httpServer = &http.Server{
